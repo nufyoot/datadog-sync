@@ -18,6 +18,8 @@ type options struct {
 	EscalationMessage       string              `json:"escalation_message,omitempty" yaml:"escalation_message,omitempty"`
 	Thresholds              thresholds          `json:"thresholds,omitempty" yaml:"thresholds,omitempty"`
 	Silenced                map[string]*float64 `json:"silenced,omitempty" yaml:"silenced,omitempty"`
+	RequireFullWindow       bool                `json:"require_full_window,omitempty" yaml:"require_full_window,omitempty"`
+	Locked                  bool                `json:"locked,omitempty" yaml:"locked,omitempty"`
 }
 
 // Monitor represents a Datadog monitor definition as exposed through their API.
