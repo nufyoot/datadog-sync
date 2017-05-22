@@ -11,8 +11,8 @@ import (
 	"net/http"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/meteor/datadog-sync/dd"
-	"github.com/meteor/datadog-sync/util"
+	"github.com/nufyoot/datadog-sync/dd"
+	"github.com/nufyoot/datadog-sync/util"
 )
 
 var (

@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/meteor/datadog-sync/util"
+	"github.com/nufyoot/datadog-sync/util"
 )
 
 const (

@@ -1,7 +1,7 @@
 package dd
 
 import (
-	"github.com/meteor/datadog-sync/util"
+	"github.com/nufyoot/datadog-sync/util"
 )
 
 type monitorSetIgnoringID map[string]Monitor
