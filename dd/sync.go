@@ -46,7 +46,7 @@ func SyncMonitors(local, remote []Monitor, client *http.Client, dryRun, verbose 
 			if r, ok := remotesByID[*l.ID]; ok {
 				delete(remotesByID, *r.ID)
 				if !reflect.DeepEqual(l, r) {
-					toUpdate = append(toUpdate, update{from: l, to: r})
+					toUpdate = append(toUpdate, update{from: r, to: l})
 				}
 			} else {
 				return fmt.Errorf("no remote alert #%d", *l.ID)
